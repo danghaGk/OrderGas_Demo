@@ -33,7 +33,15 @@ public class Item_GasHome implements Serializable{
         this.diadiem = diadiem;
         this.anh = anh;
     }
-
+    public Item_GasHome(String tencuahang, String motagia, String sodienthoai, String diadiem, String anh,String loaigas,String tenchucuahang) {
+        this.tencuahang = tencuahang;
+        this.motagia = motagia;
+        this.sodienthoai = sodienthoai;
+        this.diadiem = diadiem;
+        this.anh = anh;
+        this.loaigas=loaigas;
+        this.tenchucuahang =tenchucuahang;
+    }
 
     public String getTencuahang() {
         return tencuahang;

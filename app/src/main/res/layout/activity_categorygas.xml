@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_category"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.hazardphan.ordergas.CategoryGas_Activity"
     android:orientation="vertical"
+    tools:context="android.hazardphan.ordergas.CategoryGas_Activity"
     tools:ignore="HardcodedText">
+
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsing"
                 android:layout_width="match_parent"
@@ -30,14 +33,15 @@
                     android:scaleType="centerCrop"
                     android:tint="#11000000"
                     app:layout_collapseMode="parallax"
-                    app:layout_collapseParallaxMultiplier="0.9" />
 
+                    app:layout_collapseParallaxMultiplier="0.9" />
                 <FrameLayout
                     android:id="@+id/framelayout_title"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:background="#5f8bbe"
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="15dp"
                     android:orientation="vertical"
                     app:layout_collapseMode="parallax"
                     app:layout_collapseParallaxMultiplier="0.3">
@@ -49,55 +53,55 @@
                         android:layout_gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/txtTenCuaHangCategory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:gravity="bottom|center"
-                            android:text="Grumpy Cat"
-                            android:textColor="@android:color/white"
-                            android:textSize="25sp" />
+                        <!--<TextView-->
+                        <!--android:id="@+id/txtTenCuaHangCategory"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:gravity="bottom|center"-->
+                        <!--android:text="Oder Gas"-->
+                        <!--android:textColor="@android:color/white"-->
+                        <!--android:textSize="25sp" />-->
 
-                        <TextView
-                            android:id="@+id/txtSDTCategory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="4dp"
-                            android:text="The famous meme"
-                            android:textColor="@android:color/white" />
+                        <!--<TextView-->
+                        <!--android:id="@+id/txtSDTCategory"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:text="The famous meme"-->
+                        <!--android:textColor="@android:color/white" />-->
 
                     </LinearLayout>
                 </FrameLayout>
             </android.support.design.widget.CollapsingToolbarLayout>
         </android.support.design.widget.AppBarLayout>
+
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none"
-            
             android:layout_marginTop="@dimen/activity_horizontal_margin"
-            app:behavior_overlapTop="30dp"
+
+            android:scrollbars="none"
+            app:behavior_overlapTop="53dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
-// item layoutcategory
+
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e6e4e4"
+                android:orientation="vertical"
                 android:paddingBottom="3dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="6dp"
-                android:orientation="vertical"
-                android:layout_height="wrap_content"
-                android:background="#e6e4e4">
+                android:paddingTop="6dp">
 
                 <LinearLayout
-                    android:padding="5dp"
-                    android:background="@drawable/selector_recycleriew"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:background="@drawable/selector_recycleriew"
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -114,7 +118,7 @@
                             android:src="@drawable/shopgas" />
 
                         <TextView
-                            android:id="@+id/txtTenCuaHangC"
+                            android:id="@+id/tv_tench"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
@@ -125,6 +129,7 @@
                             android:textStyle="bold" />
 
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
@@ -163,7 +168,7 @@
 
                             <TextView
                                 android:textColor="#000000"
-                                android:id="@+id/txtDiaChiC"
+                                android:id="@+id/tv_diachi"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -192,7 +197,7 @@
 
                             <TextView
                                 android:textColor="#000000"
-                                android:id="@+id/txtLoaiGasC"
+                                android:id="@+id/tv_loaigas"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -219,7 +224,7 @@
 
                             <TextView
                                 android:textColor="#000000"
-                                android:id="@+id/txtGiaTienC"
+                                android:id="@+id/tv_giatien"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -246,7 +251,7 @@
 
                             <TextView
                                 android:textColor="#000000"
-                                android:id="@+id/txtChuCuahangC"
+                                android:id="@+id/tv_chucuahang"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -273,7 +278,7 @@
 
                             <TextView
                                 android:textColor="#000000"
-                                android:id="@+id/txtSDTC"
+                                android:id="@+id/tv_sodt"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4"
@@ -287,9 +292,9 @@
                     </LinearLayout>
 
                     <View
-                        android:layout_marginTop="3dp"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
                         android:background="#575760"></View>
 
                     <LinearLayout
@@ -325,39 +330,39 @@
                                 android:textStyle="bold" />
                         </LinearLayout>
 
+                        <!--<LinearLayout-->
+
+                        <!--android:id="@+id/lnComment"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:src="@drawable/icon_comment" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/textView2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:text="Bình luận"-->
+                        <!--android:textSize="13sp"-->
+                        <!--android:textStyle="bold" />-->
+                        <!--</LinearLayout>-->
+
                         <LinearLayout
 
-                            android:id="@+id/lnComment"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:src="@drawable/icon_comment" />
-
-                            <TextView
-                                android:id="@+id/textView2"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:gravity="center_vertical"
-                                android:singleLine="true"
-                                android:text="Bình luận"
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-
-                            android:clickable="false"
                             android:id="@+id/lnLike"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="0.9">
+                            android:layout_weight="0.9"
+                            android:clickable="false">
 
                             <ImageView
                                 android:layout_width="35dp"
@@ -381,24 +386,111 @@
                 </LinearLayout>
 
                 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
                     android:id="@+id/map"
-                    android:name="com.google.android.gms.maps.MapFragment" />
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#575760"></View>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp" xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="4dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/selector_recycleriew"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bình luận"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:paddingTop="7dp"
+                        android:layout_marginLeft="15dp"/>
+                    <View
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#575760"></View>
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="210dp"
+                        android:id="@+id/rlt1">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_cmt"
+                            android:layout_width="match_parent"
+                            android:layout_height="205dp"
+                            ></android.support.v7.widget.RecyclerView>
+                    </RelativeLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rlt2"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/ed_cmt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:hint="Tên hiển thi" />
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/ed_cmt_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+
+                            android:hint="Nội dung" />
+                        </LinearLayout>
+                        <ImageView
+    android:layout_weight="1"
+                            android:id="@+id/btn_cmt_send"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="23dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/send"/>
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
 
 
-
         </android.support.v4.widget.NestedScrollView>
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar1"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#5f8bbe"
+            android:background="#4877dc"
             app:layout_anchor="@id/framelayout_title"
             app:theme="@style/ThemeOverlay.AppCompat.Dark"
             app:title="">
-
+            <!--#5f8bbe-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -414,18 +506,11 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="8dp"
                     android:gravity="center_vertical"
-                    android:text="Grumpy Cat information"
+                    android:text=" information"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/avatar"
-            android:layout_width="@dimen/image_width"
-            android:layout_height="@dimen/image_width"
-            android:layout_gravity="center"
-            app:layout_behavior="android.hazardphan.ordergas.ImageBehavior"
-            fresco:roundAsCircle="true" />
     </android.support.design.widget.CoordinatorLayout>
 </RelativeLayout>
