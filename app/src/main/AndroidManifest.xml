@@ -36,6 +36,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB4yBSifxpko_VMvWyds8EacYf3OdgPS9Q" />
+        <activity android:name=".Login_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog"
+            android:label="@string/dangNhap"></activity>
+        <activity android:name=".CreateAcc"></activity>
     </application>
 
 </manifest>
