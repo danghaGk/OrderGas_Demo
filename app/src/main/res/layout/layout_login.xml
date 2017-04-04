@@ -10,15 +10,17 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Tài khoản"
+        android:hint="Email"
         android:id="@+id/edt_User"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_email"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Mật khẩu"
         android:id="@+id/edt_pass"
         android:inputType="textPassword"
+        android:drawableLeft="@drawable/icon_pass"
         />
     <LinearLayout
         android:layout_width="match_parent"

@@ -344,7 +344,7 @@ public class CategoryGas_Activity extends AppCompatActivity implements AppBarLay
                         } else {
                             Snackbar snackbar = Snackbar
                                     .make(findViewById(R.id.layout_category), "Send failed", Snackbar.LENGTH_SHORT)
-                                    .setAction("RETRY", new View.OnClickListener() {
+                                    .setAction("Gửi lại", new View.OnClickListener() {
                                         @Override
                                         public void onClick(View v) {
                                             sendComment();

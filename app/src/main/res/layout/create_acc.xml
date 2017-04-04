@@ -25,14 +25,26 @@
         android:layout_marginLeft="10dp"
         android:drawableLeft="@drawable/icon_email"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <EditText
         android:id="@+id/edt_pass"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Mật khẩu"
+        android:inputType="textPassword"
         android:background="#FFF"
         android:layout_marginLeft="10dp"
         android:drawableLeft="@drawable/icon_pass"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_viewpass"
+            android:id="@+id/btn_showPass"
+            />
+    </LinearLayout>
     <EditText
         android:id="@+id/edt_sdt"
         android:layout_width="match_parent"
